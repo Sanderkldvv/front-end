@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Design</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="social-sidebar">
+        <a href="https://www.linkedin.com/in/sander-klaasen-491592292/" target="_blank" rel="noopener noreferrer">
+            <img src="images/linkedin.jpg" alt="LinkedIn">
+        </a>
+        <a href="https://www.instagram.com/sanderklaas/" target="_blank" rel="noopener noreferrer">
+            <img src="images/instagram.jpg" alt="Instagram">
+        </a>
+    </div>
+
+    <header>
+        <nav class="navigation">
+            <ul>
+                <li><a href="#intro">Sander</a></li>
+                <li><a href="#mijn-foto-sectie">Foto</a></li>
+                <li><a href="#opleidingen-ervaringen-sectie">Opleidingen</a></li>
+                <li><a href="#portfolio-socials-sectie">Portfolio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="intro" class="page-section">
+            <header>
+                <div class="intro-container">
+                    <figure class="intro-image">
+                        <img src="images/ikzelf.JPG" alt="Sander Klaasen">
+                    </figure>
+                    <div class="intro-info">
+                        <h1>Sander Klaasen</h1>
+                        <p><strong>Telefoonnummer:</strong> 06-23967552</p>
+                        <p><strong>E-mail:</strong> Sanderklaasen27@gmail.com</p>
+                    </div>
+                </div>
+            </header>
+        </section>
+
+        <section id="mijn-foto-sectie" class="page-section">
+            <div class="bio-skills-container">
+                <article class="bio">
+                    <h2>Over Mij</h2>
+                    <p>Mijn naam is Sander Klaasen. Momenteel ben ik 17 jaar oud en doe ik de opleiding Software development op het Techniek College Rotterdam aan de Jan Ligthartstraat. Met deze website probeer ik jullie iets meer informatie te geven over mijzelf.</p>
+                </article>
+                <article class="skills">
+                    <h2>Skills</h2>
+                    <p><br> - <strong>Communicatie</strong>
+                    <br> - <strong>Planning</strong>
+                    <br> - <strong>Erg gedreven om nieuwe dingen te leren</strong>
+                    <br> - <strong>Betrouwbaar</strong></p>
+                </article>
+            </div>
+        </section>
+
+        <section id="opleidingen-ervaringen-sectie" class="page-section">
+            <div class="bio-skills-container">
+                <article class="bio">
+                    <h2>Opleidingen</h2>
+                    <p><br>- <strong>2019-2023 CSG Prins Maurits</strong>
+                    <br>- <strong>2023-heden Techniek College Rotterdam</strong></p>                  
+                </article>
+                <article class="skills">
+                    <h2>Ervaringen</h2>
+                    <p><br>- <strong>2018-2022 Krantenbezorger bij het Eilanden nieuws</strong>
+                    <br> - <strong>2022-heden Kassa, e-commerce medewerker Plus Slingerland</strong></p>    
+                </article>
+            </div>
+        </section>
+
+        <section id="portfolio-socials-sectie" class="page-section">
+            <div class="bio-skills-container">
+                <article class="bio">
+                    <h2>Mijn Cv</h2>
+                    <p><br> <a href="path/to/your/cv.docx" target="_blank"><strong>Download mijn CV</strong></a></p>
+                </article>
+                <article class="skills">
+                    <h2>Socials</h2>
+                    <p><br> <a href="https://www.instagram.com/sanderklaas/"><strong>Instagram</strong></a>
+                     <br> <a href="https://www.linkedin.com/in/sander-klaasen-491592292/"><strong>LinkedIn</strong></a></p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Portfolio Sander. Alle rechten voorbehouden.</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
